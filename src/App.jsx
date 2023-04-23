@@ -1,12 +1,14 @@
+import "bootstrap/dist/css/bootstrap.css";
+
+import Header from "./components/Header";
 
 function App() {
-  
-
   return (
     <>
-    <h1>Hello, world!</h1>
+      <Header false />
+      <h1>Hello, world!</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
