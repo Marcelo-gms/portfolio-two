@@ -172,7 +172,7 @@ export const StackContainer = styled.div`
       justify-content: center;
       width: 4rem;
       svg {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: ${(props) => (props.color ? props.color : "#000")};
       }
     }
