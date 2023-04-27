@@ -16,6 +16,16 @@ body{
     background-color: var(--primary-color);
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
+    font-size:0.96rem;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
 }
 
 
