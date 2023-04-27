@@ -17,6 +17,7 @@ body{
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
     font-size:0.96rem;
+    background-color: #fff;
 }
 
 a{
