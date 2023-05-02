@@ -9,15 +9,15 @@ export const Global = createGlobalStyle`
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing:border-box; 
 }
 
 body{
     background-color: var(--primary-color);
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
-    font-size:0.96rem;
     background-color: #fff;
+    
 }
 
 a{

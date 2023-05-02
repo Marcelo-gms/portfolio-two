@@ -141,7 +141,7 @@ export const SocialContainer = styled.div`
 
 export const StackContainer = styled.div`
   width: 80%;
-  margin: 0 auto;
+  margin: 4rem auto 0;
   display: flex;
   align-items: center;
 
