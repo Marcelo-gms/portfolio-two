@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 export const Container =  styled.footer`
 width: 100%;
-min-height: 6rem;
+height: 6rem;
 background-color:#2d2e32;
 color: #ffffff;
+display: flex;
+align-content: center;
 
 
 
@@ -19,20 +21,37 @@ margin: 0 auto;
 display: flex;
 align-content: center;
 
+/* justify-content: space-between; */
+
+`
+
+export const ContainerTextFooter =  styled.div`
+display:flex;
+align-items: center;
+justify-content: center;
+flex: 1;
 p{
     text-transform:capitalize;
     font-size:2rem;
+    color: #ccc;
+    span{
+        color: #fff;
+    }
 }
 
+`
+export const ContainerListLinks =  styled.ul`
+display:flex;
+gap: 30px;
+align-items: center;
+justify-content: center;
+flex: 1;
 
-ul{
-    display: flex;
-    gap: 30px;
-
-
+li{
+    a{
+        svg{
+            font-size: 1.5em;
+        }
+    }
 }
-
-
-
-
 `
