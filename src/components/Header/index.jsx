@@ -1,20 +1,41 @@
 import * as C from "./styles"
 
-import {AiOutlineMenu} from "react-icons/ai"
+import { useState } from "react"
+
+import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 
 function Header() {
+  const [openMenu, setOpeMenu] = useState(false)
+
+  const handleMenu = ()=>{
+    setOpeMenu(!openMenu)
+  }
+
+  const handleClickLink = (e)=>{
+    if(e.target.nodeName == "A" || e.target.nodeName == "LI"){
+      setOpeMenu(!openMenu)
+    }
+  }
+
   return (
     <C.Container>
-      <h1>mg</h1>
-      <C.ContainerIconMenu>
-      <AiOutlineMenu/>
-      </C.ContainerIconMenu>
-      <C.ContainerLink>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Sobre</a></li>
-      </C.ContainerLink>
+    <C.BoxLogo>
+    <h3>Marcelo Gomes</h3>
+    </C.BoxLogo>
+
+    <C.BoxIconMobile>
+      <AiOutlineMenu onClick={handleMenu} />
+    </C.BoxIconMobile>
+
+    
+    <C.BoxListMenu open={openMenu} onClick={handleClickLink}>
+      <AiOutlineClose onClick={handleMenu} />
+      
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+    </C.BoxListMenu>
     </C.Container>
   )
 }
