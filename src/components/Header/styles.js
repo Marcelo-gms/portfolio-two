@@ -22,8 +22,8 @@ box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 `
 export const BoxLogo = styled.div`
-h2{
-    font-size: 1.2em;
+h3{
+    font-size: 1.5em;
 }
 
 

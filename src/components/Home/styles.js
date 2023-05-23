@@ -115,6 +115,7 @@ export const TextContainer = styled.div`
 export const SocialContainer = styled.div`
   width: 100%;
   display: flex;
+  margin-top: 10px;
   gap: 10px;
 
   svg {

@@ -37,7 +37,21 @@ body::-webkit-scrollbar-track {
 a{
     text-decoration:none;
     color: inherit;
+    transition: .3s;
+
+    &:hover{
+        color: #a435f0;
+    }
 }
+svg{
+    
+    transition: .3s;
+
+    &:hover{
+        color: #a435f0;
+    }
+}
+
 
 ul{
     list-style: none;
