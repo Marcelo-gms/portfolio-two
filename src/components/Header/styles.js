@@ -23,7 +23,13 @@ box-shadow: 0 0 10px rgba(0,0,0,.09);
 `
 export const BoxLogo = styled.div`
 h3{
-    font-size: 1.5em;
+    font-size: 2em;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover{
+        color: #a435f0;
+    }
 }
 
 
@@ -50,7 +56,7 @@ svg{
 }
 
 li{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 @media screen and (max-width:768px) {

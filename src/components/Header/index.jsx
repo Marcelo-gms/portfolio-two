@@ -12,7 +12,8 @@ function Header() {
   }
 
   const handleClickLink = (e)=>{
-    if(e.target.nodeName == "A" || e.target.nodeName == "LI"){
+    if(e.target.nodeName === "A" || e.target.nodeName === "LI"){
+      console.log(e.target.nodeName)
       setOpeMenu(!openMenu)
     }
   }
@@ -20,7 +21,7 @@ function Header() {
   return (
     <C.Container>
     <C.BoxLogo>
-    <h3>Marcelo Gomes</h3>
+    <a href="#"><h3>Marcelo Gomes</h3></a>
     </C.BoxLogo>
 
     <C.BoxIconMobile>
@@ -31,10 +32,10 @@ function Header() {
     <C.BoxListMenu open={openMenu} onClick={handleClickLink}>
       <AiOutlineClose onClick={handleMenu} />
       
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Home</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
     </C.BoxListMenu>
     </C.Container>
   )

@@ -2,7 +2,7 @@ import * as C from "./styles"
 
 const About = () => {
   return (
-    <C.MainContainer>
+    <C.MainContainer id="about">
       <C.CenterContainer>
         <C.ImageContainer>
           <img src="/img-home.jpg" alt="about image" />

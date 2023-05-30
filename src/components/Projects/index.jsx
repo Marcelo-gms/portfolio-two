@@ -4,7 +4,7 @@ import ProjectCard from "../ProjectCard"
 
 const Projects = () => {
   return (
-    <C.Container>
+    <C.Container id="projects">
       <h1>Projectos</h1>
 
       <ProjectCard reverse />

@@ -14,7 +14,7 @@ import {
 
 const Home = () => {
   return (
-    <C.MainContainer>
+    <C.MainContainer id="home">
       <C.CenterContainer>
         <C.ImageContainer>
           <div>

@@ -4,7 +4,7 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <C.Container>
+    <C.Container id="contact">
       <C.ContainerContent>
         <h1 id="contato">Contato</h1>
 
