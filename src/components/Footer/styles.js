@@ -13,6 +13,7 @@ align-content: center;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     padding: 20px 0;
 }
 
@@ -35,6 +36,7 @@ align-content: center;
 // `
 
 export const ContainerTextFooter =  styled.div`
+width: 100%;
 display:flex;
 align-items: center;
 justify-content: center;

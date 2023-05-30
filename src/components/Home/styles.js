@@ -151,6 +151,7 @@ export const StackContainer = styled.div`
     text-transform: capitalize;
     display: flex;
     gap: 10px;
+    margin-right: 10px;
 
     &::after {
       content: "|";

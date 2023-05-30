@@ -2,9 +2,9 @@ import * as C from "./styles"
 
 const About = () => {
   return (
-    <C.MainContainer id="about">
+    <C.MainContainer >
       <C.CenterContainer>
-        <C.ImageContainer>
+        <C.ImageContainer id="about">
           <img src="/img-home.jpg" alt="about image" />
         </C.ImageContainer>
         <C.TextContainer>
