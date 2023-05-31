@@ -52,10 +52,14 @@ export const ContainerText = styled.div`
 
   h1 {
     margin-bottom: 15px;
+    text-transform: capitalize;
   }
 
   p {
     line-height: 1.8rem;
+    &::first-letter{
+      text-transform:uppercase;
+    }
   }
 
   @media (max-width: 1024px) {
