@@ -27,7 +27,7 @@ const Projects = () => {
   ]
   return (
     <C.Container id="projects">
-      <h1>Projectos</h1>
+      <h1>Projetos</h1>
 
      {projects.map(project => <ProjectCard key={project.id} project={project}/>)}
     </C.Container>

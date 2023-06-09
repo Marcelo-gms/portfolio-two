@@ -10,7 +10,8 @@ const About = () => {
         <C.TextContainer>
           <h4>Sobre mim</h4>
           <h1>Desenvolvedor front-end React.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus laborum nobis sapiente odio ipsa iste distinctio nostrum temporibus, in, amet laudantium totam est numquam! Consectetur labore itaque porro culpa!</p>
+          <p>Meu nome é Marcelo Gomes, sou formado em análise e desenvolvimento de sistemas, e tenho focado no desenvolvimento web como carreira. tenho uma boa base em <span>Html, Css e Javascritp</span>, atualmente estou me aprofundando no <span>React</span>.</p>
+          <p>estudo <span>node</span> e o banco de dados <span>MongoDB</span> nas horas vagas também.</p>
         </C.TextContainer>
       </C.CenterContainer>
     </C.MainContainer>

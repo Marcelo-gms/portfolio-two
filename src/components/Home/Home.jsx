@@ -18,14 +18,13 @@ const Home = () => {
       <C.CenterContainer>
         <C.ImageContainer>
           <div>
-            <img src="/img-home.jpg" alt="author" />
+            <img src="/mg-home2.jpeg" alt="author" />
           </div>
         </C.ImageContainer>
         <C.TextContainer>
           <h1>Desenvolvedor front-end.</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quidem
-            maiores.
+          Seja Bem-Vindo(a)
           </p>
 
           <C.SocialContainer>

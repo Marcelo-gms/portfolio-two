@@ -66,8 +66,12 @@ margin-bottom: 20px;
 
 p{
   color: #767676;
-  font-size: 1.5rem;
-  line-height: 1.7rem;
+  font-size: 1.3em;
+  line-height: 1.2em;
+
+  span{
+    font-weight: 500;
+  }
 }
 
 

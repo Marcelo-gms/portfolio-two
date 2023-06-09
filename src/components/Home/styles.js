@@ -5,11 +5,12 @@ export const MainContainer = styled.div`
   max-width: 1440px;
   /* background-color: #000; */
   background-color: #f7f7f7;
-  padding: 50px 0 0;
+  padding: 50px 0 20px 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
   position: relative;
+  
 
   @media (max-width: 900px) {
   }
@@ -38,10 +39,11 @@ export const ImageContainer = styled.div`
     width: 100%;
     margin: 0 auto;
   }
-
+  
   img {
     width: 100%;
-    height: auto;
+    max-height: 300px;
+    /* height: auto; */
     border-radius: 5px;
   }
 
