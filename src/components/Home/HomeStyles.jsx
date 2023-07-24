@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   width: 100%;
-  max-width: 1440px;
-  /* background-color: #000; */
   background-color: #f7f7f7;
   padding: 50px 0 20px 0;
   display: flex;
@@ -18,6 +16,7 @@ export const MainContainer = styled.div`
 
 export const CenterContainer = styled.div`
   max-width: 80%;
+ 
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;

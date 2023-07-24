@@ -1,4 +1,4 @@
-import * as C from "./styles";
+import * as C from "./HomeStyles";
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import {
