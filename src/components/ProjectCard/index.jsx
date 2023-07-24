@@ -3,8 +3,6 @@ import * as C from "./styles";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 
 const ProjectCard = ({project}) => {
-  console.log(project)
-
   return (
   <>
    {project && (
@@ -21,7 +19,7 @@ const ProjectCard = ({project}) => {
       </C.ContainerText>
 
       <C.ContainerStack>
-        {project.stack && project.stack.map(name =>  <button>{name}</button>)}
+        {project.stack && project.stack.map(name =>  <button key={name}>{name}</button>)}
       </C.ContainerStack>
 
       <C.ContainerLinks>

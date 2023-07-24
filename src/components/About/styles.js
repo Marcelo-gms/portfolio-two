@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #fff;
 
 `;
 export const CenterContainer = styled.div`
-width: 80%;
+width: 100%;
 margin: 4rem auto;
 display: flex;
 gap: 4rem;

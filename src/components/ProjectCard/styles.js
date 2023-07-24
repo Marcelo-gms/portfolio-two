@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
+  width: 100%;
+  min-height: 300px;
   margin: 20px auto;
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -10,12 +11,10 @@ export const Container = styled.div`
 
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
-  @media (max-width: 500px) {
-    width: 80%;
-  }
+
 `;
 export const Image = styled.div`
   flex: 1;
@@ -53,6 +52,7 @@ export const ContainerText = styled.div`
   h1 {
     margin-bottom: 15px;
     text-transform: capitalize;
+    font-size: 1.7em;
   }
 
   p {

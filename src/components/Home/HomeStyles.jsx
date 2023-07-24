@@ -8,109 +8,58 @@ export const MainContainer = styled.div`
   flex-direction: column;
   gap: 40px;
   position: relative;
-  
 
   @media (max-width: 900px) {
   }
 `;
 
 export const CenterContainer = styled.div`
-  max-width: 80%;
- 
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 20px;
 
-  @media (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
-    flex-direction:column;
-   
-  }
-`;
-
-export const ImageContainer = styled.div`
-  width: 90%;
-  margin: 0 auto;
-  flex: 1;
-
-  div {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  img {
-    width: 100%;
-    max-height: 300px;
-    /* height: auto; */
-    border-radius: 5px;
-  }
-
-  @media (max-width: 900px) {
-    width: 100%;
+    padding: 0 30px;
+    //flex-direction: column;
   }
 `;
 
 export const TextContainer = styled.div`
   width: 100%;
-  flex: 1;
   display: flex;
   flex-direction: column;
 
   h1 {
-    font-size: 4.5rem;
-      line-height: 5rem;
+    font-size: 4rem;
     text-transform: capitalize;
   }
 
   p {
     font-size: 1.8rem;
-    line-height: 2rem;
   }
 
-  @media (max-width: 900px) {
-    text-align: center;
-    
-    h1 {
-      
-      font-size: 5rem;
-        line-height: 5rem;
-    }
+  @media (max-width: 500px) {
+      h1{
+        font-size: 3em;
+      }
 
-    p {
-      font-size: 1.8rem;
-    }
+      p{
+        font-size: 1.7em;
+      }
   }
-  @media (max-width: 768px){
 
-    h1 {
-      font-size: 4.3rem;
-      line-height: 4rem;
-    }
+  @media (max-width: 375px) {
+      h1{
+        font-size: 2.4em;
+      }
 
-    p {
-      font-size: 1.3rem;
-    }
-
+      p{
+        font-size: 1.3em;
+      }
   }
-  @media (max-width: 517px) {
-    text-align: center;
 
-    h1 {
-      font-size: 3.5rem;
-      line-height: 3.5rem;
-    }
 
-    p {
-      font-size: 1.3rem;
-    }
-  }
-  @media (max-width: 420px) {
-    h1 {
-      font-size: 2.5rem;
-
-    }
-  }
 `;
 
 export const SocialContainer = styled.div`
@@ -120,7 +69,7 @@ export const SocialContainer = styled.div`
   gap: 10px;
 
   svg {
-    font-size: 2rem;
+    font-size: 2em;
     transition: all 0.5s;
 
     &:hover {
@@ -128,22 +77,19 @@ export const SocialContainer = styled.div`
     }
   }
 
-  @media (max-width: 900px) {
-    justify-content: center;
-  }
   @media (max-width: 500px) {
-    justify-content: center;
+    // justify-content: center;
 
     svg {
-      font-size: 1.5rem;
+      
     }
   }
 `;
 
-
 export const StackContainer = styled.div`
-  width: 80%;
-  margin: 4rem auto 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 3em auto 0;
   display: flex;
   align-items: center;
 
@@ -180,52 +126,44 @@ export const StackContainer = styled.div`
       }
     }
   }
+  @media screen and (max-width: 1200px) {
+    padding: 0 30px;
+  }
 
-  @media (max-width: 900px) {
-    width: calc(100% - 2px);
-    flex-direction: column;
+  @media screen and (max-width: 992px) {
     flex-wrap: wrap;
-    margin: 0 auto;
-   gap: 10px;
+    gap: 1em;
 
     h3 {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      width: 100%;
 
       &::after {
         content: "";
       }
     }
+  }
 
+  @media screen and (max-width: 768px) {
+    margin: 2em auto 0;
     ul {
-     
-     
-      justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
-      margin: 0 auto;
-      padding: 0;
+      justify-content: flex-start;
 
       li {
-       
+        // flex: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    ul {
+      li {
+        width: 3.5em;
+        height: 3.5em;
+
         svg {
+          font-size: 1.5em;
         }
       }
     }
   }
-
-  /* @media (max-width: 500px) {
-    margin: 0 auto;
-    ul {
-      flex-wrap: wrap;
-
-      li {
-        height: 3.5rem;
-        width: 3.5rem;
-
-        svg {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  } */
 `;

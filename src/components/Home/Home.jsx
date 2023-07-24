@@ -16,16 +16,11 @@ const Home = () => {
   return (
     <C.MainContainer id="home">
       <C.CenterContainer>
-        <C.ImageContainer>
-          <div>
-            <img src="/mg-home2.jpeg" alt="author" />
-          </div>
-        </C.ImageContainer>
+        
         <C.TextContainer>
-          <h1>Desenvolvedor front-end.</h1>
-          <p>
-          Seja Bem-Vindo(a)
-          </p>
+          <h1>Desenvolvedor</h1>
+          <h1>front-end.</h1>
+          <p>Seja Bem-Vindo(a)</p>
 
           <C.SocialContainer>
             <a
