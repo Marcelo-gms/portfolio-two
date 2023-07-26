@@ -49,7 +49,12 @@ const Contact = () => {
       <h1 id="contato">Contato</h1>
       <C.ContainerContent>
         <C.ContainerForm>
-          <form onSubmit={handleSubmit} data-netlify="true">
+          <form
+            onSubmit={handleSubmit}
+            data-netlify="true"
+            name="contact"
+            netlify
+          >
             <label>
               <span>Nome:</span>
               <input
