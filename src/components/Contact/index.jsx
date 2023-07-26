@@ -10,7 +10,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const validateEmail = /\S+@\S+\.\S+/;
@@ -25,9 +25,17 @@ const Contact = () => {
       return toast.error("A mensagem precisa ter no minimo 5 caracteres.");
     }
 
-    console.log(name);
-    console.log(email);
-    console.log(message);
+    const contact = {
+      name,
+      email,
+      message,
+    };
+
+   await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(contact),
+    });
 
     setName("");
     setEmail("");
