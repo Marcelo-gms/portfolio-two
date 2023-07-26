@@ -24,7 +24,7 @@ export const ContainerContent = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 650px) {
     flex-direction: column;
   }
 `;
@@ -33,8 +33,13 @@ export const ContainerForm = styled.div`
   width: 100%;
   max-width: 350px;
 
+  @media screen and (max-width: 650px) {
+    margin: 0 auto;
+  }
+
   form {
     width: 100%;
+    min-width: 300px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -106,12 +111,22 @@ export const ContainerIcons = styled.div`
   justify-content: flex-start;
   //border: 1px solid red;
 
+  @media screen and (max-width: 650px) {
+    margin: 0 auto;
+  }
+
   ul {
     display: flex;
     width: 100%;
-    max-width: 300px;
+    min-width: 300px;
+    // max-width: 300px;
     flex-direction: column;
     justify-content: space-between;
+    align-items: end;
+
+    @media screen and (max-width: 650px) {
+      align-items: flex-start;
+    }
 
     li {
       display: flex;
