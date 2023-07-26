@@ -148,17 +148,26 @@ export const StackContainer = styled.div`
     ul {
       flex-wrap: wrap;
       justify-content: flex-start;
+      
 
       li {
         // flex: 1;
       }
     }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 419px) {
     ul {
+      justify-content: center;
+     
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    ul {
+      
       li {
-        width: 3.5em;
-        height: 3.5em;
+        width: 3.55em;
+        height: 3.55em;
 
         svg {
           font-size: 1.5em;
@@ -166,4 +175,6 @@ export const StackContainer = styled.div`
       }
     }
   }
+  
+  
 `;

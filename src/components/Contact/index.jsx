@@ -51,8 +51,8 @@ const Contact = () => {
       <h1 id="contato">Contato</h1>
       <C.ContainerContent>
         <C.ContainerForm>
-          <form method="post" name="contact">
-            <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit}>
+            
             <label>
               <span>Nome:</span>
               <input

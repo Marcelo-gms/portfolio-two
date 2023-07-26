@@ -24,8 +24,9 @@ export const ContainerContent = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
+    row-gap: 20px;
   }
 `;
 
@@ -33,7 +34,7 @@ export const ContainerForm = styled.div`
   width: 100%;
   max-width: 350px;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     margin: 0 auto;
   }
 
@@ -45,6 +46,12 @@ export const ContainerForm = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
 
     label {
       width: 100%;
@@ -111,21 +118,26 @@ export const ContainerIcons = styled.div`
   justify-content: flex-start;
   //border: 1px solid red;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     margin: 0 auto;
   }
 
   ul {
     display: flex;
     width: 100%;
-    min-width: 300px;
-    // max-width: 300px;
+    //min-width: 300px;
+    max-width: 300px;
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 768px) {
       align-items: flex-start;
+    }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
     }
 
     li {
@@ -147,8 +159,12 @@ export const ContainerIcons = styled.div`
 
       span {
         border-bottom: 1px solid #ccc;
-        width: 210px;
+        width: 240px;
         padding-bottom: 5px;
+
+        @media screen and (max-width: 375px) {
+          width: 200px;
+        }
       }
 
       span:first-child {
@@ -161,8 +177,8 @@ export const ContainerIcons = styled.div`
         color: rgb(53, 53, 58);
         border: none;
         padding: 0;
-
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
         svg {
           font-size: 1.4em;
           color: inherit;
