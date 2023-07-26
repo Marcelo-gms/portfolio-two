@@ -10,7 +10,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const validateEmail = /\S+@\S+\.\S+/;
@@ -31,7 +31,7 @@ const Contact = () => {
       message,
     };
 
-    await fetch("/", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(contact).toString(),
@@ -49,12 +49,7 @@ const Contact = () => {
       <h1 id="contato">Contato</h1>
       <C.ContainerContent>
         <C.ContainerForm>
-          <form
-            onSubmit={handleSubmit}
-            data-netlify="true"
-            name="contact"
-            netlify
-          >
+          <form onSubmit={handleSubmit} name="contact" netlify>
             <label>
               <span>Nome:</span>
               <input
