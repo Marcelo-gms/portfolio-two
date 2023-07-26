@@ -10,7 +10,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const validateEmail = /\S+@\S+\.\S+/;
@@ -31,17 +31,19 @@ const Contact = () => {
       message,
     };
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(contact).toString(),
-    });
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(name, email, message).toString(),
+      });
 
-    setName("");
-    setEmail("");
-    setMessage("");
+      setName("");
+      setEmail("");
+      setMessage("");
 
-    toast.success("Mensagem enviada com sucesso, obrigado!");
+      toast.success("Mensagem enviada com sucesso, obrigado!");
+    } catch (error) {console.log(error)}
   };
 
   return (
@@ -49,8 +51,8 @@ const Contact = () => {
       <h1 id="contato">Contato</h1>
       <C.ContainerContent>
         <C.ContainerForm>
-          <form onSubmit={handleSubmit} name="contact">
-          <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit} method="post" name="contact">
+            <input type="hidden" name="form-name" value="contact" />
             <label>
               <span>Nome:</span>
               <input
@@ -65,7 +67,7 @@ const Contact = () => {
             <label>
               <span>E-mail:</span>
               <input
-                type="text"
+                type="email"
                 name="email"
                 placeholder="Digite seu E-mail"
                 value={email}
