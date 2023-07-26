@@ -69,7 +69,7 @@ export const BoxListMenu = styled.ul`
   }
 
   li {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   @media screen and (max-width: 768px) {

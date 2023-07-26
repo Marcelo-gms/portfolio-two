@@ -6,14 +6,18 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// toastFy
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <>
+    <ToastContainer />
       <Header false />
       <Home />
       <About />
-      <Projects/>
+      <Projects />
       <Contact />
       <Footer />
     </>

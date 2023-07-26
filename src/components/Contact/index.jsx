@@ -1,25 +1,66 @@
 import * as C from "./styles";
 
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import { toast } from "react-toastify";
 
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { useState } from "react";
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const validateEmail = /\S+@\S+\.\S+/;
+
+    if (!name || name.length < 3) {
+      return toast.error("O nome precisa ter no minimo 3 caracteres.");
+    }
+    if (!email || email.length < 3 || !validateEmail.test(email)) {
+      return toast.error("O E-mail é invalido ou é muito curto!");
+    }
+    if (!message || message.length < 5) {
+      return toast.error("A mensagem precisa ter no minimo 5 caracteres.");
+    }
+
+    console.log(name);
+    console.log(email);
+    console.log(message);
+
+    setName("");
+    setEmail("");
+    setMessage("");
+
+    toast.success("Mensagem enviada com sucesso, obrigado!");
+  };
+
   return (
     <C.Container id="contact">
+      <h1 id="contato">Contato</h1>
       <C.ContainerContent>
-        <h1 id="contato">Contato</h1>
-
         <C.ContainerForm>
-          <form>
+          <form onSubmit={handleSubmit} data-netlify="true">
             <label>
               <span>Nome:</span>
-              <input type="text" name="name" placeholder="Digite seu nome" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Digite seu nome"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
             </label>
             <label>
               <span>E-mail:</span>
               <input
-                type="email"
+                type="text"
                 name="email"
                 placeholder="Digite seu E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </label>
 
@@ -29,6 +70,9 @@ const Contact = () => {
                 name="message"
                 id="message"
                 placeholder="Digite sua mensagem"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
               ></textarea>
             </label>
             <button type="submit">Enviar</button>
@@ -38,17 +82,44 @@ const Contact = () => {
         <C.ContainerIcons>
           <ul>
             <li>
-              <span>
-                <MdLocationOn />
-              </span>
+              <a
+                href="https://www.linkedin.com/in/marcelo-gomes-90099b235/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <BsLinkedin />
+                </span>
 
-              <span>Porto velho / RO</span>
+                <span>Marcelo Gomes</span>
+              </a>
             </li>
+            <li>
+              <a
+                href="https://github.com/Marcelo-gms"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <BsGithub />
+                </span>
+
+                <span>Marcelo-gms</span>
+              </a>
+            </li>
+
             <li>
               <span>
                 <MdEmail />
               </span>
               <span>marcelodev082@gmail.com</span>
+            </li>
+            <li>
+              <span>
+                <MdLocationOn />
+              </span>
+
+              <span>Porto velho / RO</span>
             </li>
           </ul>
         </C.ContainerIcons>

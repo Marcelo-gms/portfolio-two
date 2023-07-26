@@ -7,16 +7,17 @@ const Projects = () => {
     {
       id: 1,
       reverse: true,
-      name: "controle de finanças",
+      name: "Store",
       description:
         "sistema de controle de finanças, criado com react, os dados são armazenados no localstorage!",
-      stack: ["React", "styled components"],
+      stack: ["React", "Api fake store","React-router"],
       links: [
-        "https://github.com/Marcelo-gms/controle-de-financas",
-        "https://mgfinance.netlify.app/",
+        "https://github.com/Marcelo-gms/mg-store",
+        "https://mg-store.netlify.app/",
       ],
-      pathImg: "project-finance.png",
+      pathImg: "project-store.jpeg",
     },
+
     {
       id: 2,
       reverse: false,
@@ -29,6 +30,19 @@ const Projects = () => {
         "https://mgfilmes.netlify.app/",
       ],
       pathImg: "project-movie.png",
+    },
+    {
+      id: 3,
+      reverse: true,
+      name: "controle de finanças",
+      description:
+        "sistema de controle de finanças, criado com react, os dados são armazenados no localstorage!",
+      stack: ["React", "styled components"],
+      links: [
+        "https://github.com/Marcelo-gms/controle-de-financas",
+        "https://mgfinance.netlify.app/",
+      ],
+      pathImg: "project-finance.png",
     },
   ];
   return (
