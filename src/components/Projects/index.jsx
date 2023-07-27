@@ -9,8 +9,8 @@ const Projects = () => {
       reverse: true,
       name: "Store",
       description:
-        "sistema de controle de finanças, criado com react, os dados são armazenados no localstorage!",
-      stack: ["React", "Api fake store","React-router"],
+        "Projeto react com a api fake store, se trata de um mini e-commerce, contendo todo o básico do front-end de uma  loja online. ",
+      stack: ["React", "Api fake store", "React-router"],
       links: [
         "https://github.com/Marcelo-gms/mg-store",
         "https://mg-store.netlify.app/",
@@ -23,7 +23,7 @@ const Projects = () => {
       reverse: false,
       name: "mg filmes",
       description:
-        "sistema de controle de finanças, criado com react, os dados são armazenados no localstorage!",
+        "Este projeto  mostra informações sobre filmes, consome a api do TMDB, podendo favoritar fimes, além de direcionar para o trailer do filme escolhido. ",
       stack: ["React", "Axios"],
       links: [
         "https://github.com/Marcelo-gms/mg-filmes",
@@ -36,7 +36,7 @@ const Projects = () => {
       reverse: true,
       name: "controle de finanças",
       description:
-        "sistema de controle de finanças, criado com react, os dados são armazenados no localstorage!",
+        "Projeto simples para controle de finanças,  salvando entradas e saídas e fazendo os cálculos necessários para o gerenciamento.",
       stack: ["React", "styled components"],
       links: [
         "https://github.com/Marcelo-gms/controle-de-financas",

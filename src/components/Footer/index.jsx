@@ -5,12 +5,12 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const Footer = () => {
   return (
     <C.Container>
-      {/* <C.ContainerContent> */}
-      <C.ContainerTextFooter>
+      <C.ContainerContent>
+      
         <p>
           Criado por: <span>Marcelo Gomes</span>.
         </p>
-      </C.ContainerTextFooter>
+      
 
       <C.ContainerListLinks>
         <li>
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
         </li>
       </C.ContainerListLinks>
-      {/* </C.ContainerContent> */}
+      </C.ContainerContent>
     </C.Container>
   );
 };

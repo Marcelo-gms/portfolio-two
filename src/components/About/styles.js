@@ -6,6 +6,11 @@ export const MainContainer = styled.div`
   margin: 0 auto;
   background-color: #fff;
 
+  @media screen and (max-width:1200px) {
+    padding: 0 30px;
+    
+  }
+
 `;
 export const CenterContainer = styled.div`
 width: 100%;
