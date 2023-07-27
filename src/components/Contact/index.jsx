@@ -32,10 +32,10 @@ const Contact = () => {
     };
 
     try {
-      await fetch("/", {
+      await fetch("https://menage.onrender.com/message", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(name, email, message).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(contact),
       });
 
       setName("");
@@ -43,7 +43,9 @@ const Contact = () => {
       setMessage("");
 
       toast.success("Mensagem enviada com sucesso, obrigado!");
-    } catch (error) {console.log(error)}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -52,7 +54,6 @@ const Contact = () => {
       <C.ContainerContent>
         <C.ContainerForm>
           <form onSubmit={handleSubmit}>
-            
             <label>
               <span>Nome:</span>
               <input
