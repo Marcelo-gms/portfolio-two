@@ -9,9 +9,11 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const validateEmail = /\S+@\S+\.\S+/;
 
@@ -43,8 +45,10 @@ const Contact = () => {
       setMessage("");
 
       toast.success("Mensagem enviada com sucesso, obrigado!");
+      setLoading(false);
     } catch (error) {
-      console.log(error);
+      setLoading(false);
+      toast.error("Error ao enviar mensagem, tente novamente.");
     }
   };
 
@@ -87,7 +91,11 @@ const Contact = () => {
                 required
               ></textarea>
             </label>
-            <button type="submit">Enviar</button>
+            {!loading ? (
+              <button type="submit">Enviar</button>
+            ) : (
+              <button disabled>Enviando...</button>
+            )}
           </form>
         </C.ContainerForm>
 

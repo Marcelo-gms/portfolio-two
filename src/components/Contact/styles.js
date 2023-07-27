@@ -100,12 +100,14 @@ export const ContainerForm = styled.div`
       border: 1px solid #444;
       font-weight: bold;
       background-color: transparent;
-      transition: 0.7s;
+      transition: 0.5s;
+    }
 
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #f7f7f7;
-      }
+    button:disabled {
+      background-color: #ccc;
+      border-color: #ccc;
+      color: #000;
+      cursor: not-allowed;
     }
   }
 `;
