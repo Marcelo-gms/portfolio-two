@@ -23,7 +23,7 @@ const Projects = () => {
       reverse: false,
       name: "mg filmes",
       description:
-        "Este projeto  mostra informações sobre filmes, consome a api do TMDB, podendo favoritar fimes, além de direcionar para o trailer do filme escolhido. ",
+        "Este projeto  mostra informações sobre filmes, consome a api do TMDB, podendo favoritar filmes, além de direcionar para o trailer do filme escolhido. ",
       stack: ["React", "Axios"],
       links: [
         "https://github.com/Marcelo-gms/mg-filmes",
